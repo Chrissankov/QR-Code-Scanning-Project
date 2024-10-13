@@ -1,0 +1,72 @@
+html,
+body {
+  width: 100%; /* Ensure full width of the viewport */
+  height: 100%; /* Ensure full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+body {
+  font-family: "Outfit", sans-serif; /* Set font family to Outfit */
+  font-weight: 400; /* Use regular font weight */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #d5e1ef; /* Light background color */
+  padding-top: 5rem; /* Space at the top */
+  padding-bottom: 5rem; /* Space at the bottom */
+}
+
+.container {
+  background-color: white; /* White background for the container */
+  display: flex; /* Use flexbox for inner content alignment */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  border-radius: 2rem; /* Rounded corners */
+  padding: 2rem; /* Padding inside the container */
+  width: 18rem; /* Fixed width for the container */
+  text-align: center; /* Center text */
+  transform: scale(0.75); /* Scale down the container */
+}
+
+.container img {
+  width: 19rem; /* Fixed width for images */
+  height: 19rem; /* Fixed height for images */
+  border-radius: 2rem; /* Rounded corners for images */
+}
+
+.container h1 {
+  color: #2a3952; /* Darker color for headings */
+  font-weight: 700; /* Bold font weight for headings */
+}
+
+.container p {
+  color: #848b96; /* Lighter color for paragraphs */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for screens smaller than 768px */
+  .container {
+    width: 80dvw; /* Make container responsive */
+    transform: scale(1); /* Remove scaling for smaller screens */
+    padding: 1rem; /* Make the padding smaller */
+  }
+
+  .container img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  body {
+    padding-top: 2rem; /* Reduce top padding */
+    padding-bottom: 2rem; /* Reduce bottom padding */
+  }
+
+  .container h1 {
+    font-size: 1.5rem; /* Adjusting the font-size */
+  }
+}
